@@ -1,4 +1,0 @@
-#Mon May 22 14:56:44 IST 2023
-base.0=E\:\\battery saving sunny raj\\screen-battery-saver-sunnyraj\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
