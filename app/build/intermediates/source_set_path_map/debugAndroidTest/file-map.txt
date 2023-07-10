@@ -1,0 +1,5 @@
+sunnyraj.blackscreenbatterysaver.test.app-androidTest-0 E:\battery saving sunny raj\screen-battery-saver-sunnyraj\app\build\generated\res\resValues\androidTest\debug
+sunnyraj.blackscreenbatterysaver.test.app-androidTest-1 E:\battery saving sunny raj\screen-battery-saver-sunnyraj\app\build\generated\res\rs\androidTest\debug
+sunnyraj.blackscreenbatterysaver.test.app-mergeDebugAndroidTestResources-2 E:\battery saving sunny raj\screen-battery-saver-sunnyraj\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+sunnyraj.blackscreenbatterysaver.test.app-mergeDebugAndroidTestResources-3 E:\battery saving sunny raj\screen-battery-saver-sunnyraj\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+sunnyraj.blackscreenbatterysaver.test.app-merged_res-4 E:\battery saving sunny raj\screen-battery-saver-sunnyraj\app\build\intermediates\merged_res\debugAndroidTest

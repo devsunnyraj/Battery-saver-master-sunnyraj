@@ -1,0 +1,4 @@
+#Fri May 19 09:13:35 IST 2023
+base.0=E\:\\battery saving sunny raj\\screen-battery-saver-sunnyraj\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
