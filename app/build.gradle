@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+
+    signingConfigs {
+        release
+    }
+    setupSigningConfig()
+
+    defaultConfig {
+        applicationId "busu.blackscreenbatterysaver"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 110
+        versionName "1.1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    annotationProcessor 'com.google.auto.value:auto-value:1.5.2'
+}
+
+def setupSigningConfig() {
+    def releasePropsFile = project.file('../release.properties')
+    if (!releasePropsFile.exists()) {
+        println "# setup keystorePath and other values in your release.properties file"
+        return
+    }
+
+    Properties releaseProps = new Properties()
+    releasePropsFile.withInputStream { stream ->
+        releaseProps.load(stream)
+    }
+
+    if (releaseProps.keystorePath) {
+        android.signingConfigs.release.storeFile =
+                file(releaseProps.keystorePath)
+        android.signingConfigs.release.storePassword =
+                releaseProps.keystorePassword
+        android.signingConfigs.release.keyAlias = releaseProps.keystoreAlias
+        android.signingConfigs.release.keyPassword =
+                releaseProps.keystoreAliasPassword
+    } else {
+        println "# setup keystorePath and other values in your release.properties file"
+    }
+}
